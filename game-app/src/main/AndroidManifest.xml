@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.happiest.game"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.gamepad" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+    <!-- 网络相关 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 友盟统计 -->
+    <application
+        android:name="com.happiest.game.app.HappyGameApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:isGame="true"
+        android:icon="@mipmap/ic_game_launcher"
+        android:roundIcon="@mipmap/ic_game_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/MyAppTheme"
+        tools:targetApi="n">
+
+        <!-- 表示当前已经适配了分区存储 -->
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
+
+        <!-- 适配 Android 7.0 文件意图 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".app.shared.launch.SplashActivity"
+            android:theme="@style/LaunchTheme"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.happiest.game.app.mobile.feature.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.happiest.game.app.shared.game.ExternalGameLauncherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/GameTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="happier" android:host="${applicationId}" android:pathPattern="/play-game/id/.*"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.happiest.game.app.mobile.feature.game.GameActivity"
+            android:process=":game"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/GameTheme"/>
+
+        <activity android:name=".app.shared.about.AboutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AboutTheme"/>
+
+
+        <service android:name="com.happiest.game.app.mobile.feature.game.GameService"
+            android:process=":game" />
+
+        <activity android:name="com.happiest.game.app.mobile.feature.gamemenu.GameMenuActivity"
+            android:process=":game"
+            android:theme="@style/MyPreferenceOverlay"/>
+
+        <activity android:name="com.happiest.game.app.shared.settings.StorageFrameworkPickerLauncher"
+            android:theme="@style/InvisibleTheme"/>
+
+        <activity android:name="com.happiest.game.app.shared.gamecrash.GameCrashActivity"
+            android:theme="@style/GameTheme" />
+
+        <activity android:name=".app.shared.dialog.PreShareActivity"
+            android:theme="@style/MyShareDialog"/>
+
+        <activity android:name=".app.shared.privacy.PrivacyPolicyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AboutTheme"/>
+
+        <!-- It is not possible to invoke Work from another process with the default initializer.
+             We have to disable it and manually initialize it in our custom Application. -->
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="${applicationId}.workmanager-init"
+            android:enabled="false"/>
+
+        <!-- 友盟 Key（请在 Gradle 中配置，请不要在此处修改） -->
+        <meta-data
+            android:name="UM_KEY"
+            android:value="${UM_KEY}" />
+
+        <!-- QQ AppId（请在 Gradle 中配置，请不要在此处修改） -->
+        <meta-data
+            android:name="QQ_ID"
+            android:value="${QQ_ID}" />
+        <!-- QQ Secret（请在 Gradle 中配置，请不要在此处修改） -->
+        <meta-data
+            android:name="QQ_SECRET"
+            android:value="${QQ_SECRET}" />
+
+        <!-- 微信 AppId（请在 Gradle 中配置，请不要在此处修改） -->
+        <meta-data
+            android:name="WX_ID"
+            android:value="${WX_ID}" />
+        <!-- 微信 Secret（请在 Gradle 中配置，请不要在此处修改） -->
+        <meta-data
+            android:name="WX_SECRET"
+            android:value="${WX_SECRET}" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Android 11 软件包可见性适配：https://developer.android.google.cn/about/versions/11/privacy/package-visibility -->
+    <queries>
+        <!-- 手机 QQ 的包名 -->
+        <package android:name="com.tencent.mobileqq" />
+        <!-- 微信的包名 -->
+        <package android:name="com.tencent.mm" />
+    </queries>
+
+</manifest>

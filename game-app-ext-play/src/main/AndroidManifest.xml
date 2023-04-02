@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.happiest.game.ext">
+
+    <application>
+        <activity
+            android:name="com.happiest.game.ext.feature.savesync.ActivateGoogleDriveActivity"
+            android:theme="@style/InvisibleTheme"/>
+    </application>
+</manifest>

@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="game_entry_size">144dp</dimen>
+    <dimen name="favorite_toggle_size">40dp</dimen>
+    <dimen name="size_game_list">72dp</dimen>
+    <dimen name="grid_spacing">@dimen/grid_unit_2x</dimen>
+
+    <string name="system_card_image_ratio">4:3</string>
+    <string name="game_card_image_ratio">1:1</string>
+
+    <!-- 默认分割线大小 -->
+    <dimen name="line_size">1px</dimen>
+
+    <!-- 默认按钮的圆角大小 -->
+    <dimen name="button_circle_size">999dp</dimen>
+
+    <!-- 通用对话框圆角大小 -->
+    <dimen name="dialog_ui_round_size">15dp</dimen>
+</resources>

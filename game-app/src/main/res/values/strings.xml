@@ -1,0 +1,277 @@
+<resources>
+    <string name="title_home">游戏</string>
+    <string name="title_search">搜索</string>
+    <string name="title_systems">系统</string>
+    <string name="title_games">游戏</string>
+    <string name="title_settings">设置</string>
+    <string name="recent">最近</string>
+    <string name="favorites">收藏</string>
+    <string name="discover">发现</string>
+    <string name="rescan">扫描</string>
+    <string name="none">选择游戏目录</string>
+    <string name="directory">游戏目录</string>
+    <string name="display_filter">游戏画面</string>
+    <string name="roms">目录</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="settings">设置</string>
+    <string name="show_all">显示全部</string>
+
+    <string name="settings_category_general">游戏</string>
+    <string name="settings_category_input">设备</string>
+    <string name="settings_category_misc">通用</string>
+    <string name="settings_title_enable_autosave">自动保存</string>
+    <string name="settings_title_enable_touch_feedback">触摸震动</string>
+    <string name="settings_title_tilt_sensitivity">震动强度</string>
+    <string name="settings_title_maximum_cache_usage">缓存限制</string>
+
+    <string name="settings_title_gamepad_settings">外接设备</string>
+    <string name="settings_description_gamepad_settings">设置游戏手柄和键盘</string>
+
+    <string name="settings_gamepad_button_name">Button %1$s</string>
+    <string name="settings_retropad_button_name">RetroPad %1$s</string>
+    <string name="settings_retropad_button_unassigned">Unassigned</string>
+
+    <string name="settings_gamepad_category_enabled">Enabled devices</string>
+    <string name="settings_gamepad_category_general">通用</string>
+    <string name="settings_gamepad_title_reset_bindings">重置绑定</string>
+    <string name="settings_gamepad_title_game_menu">菜单</string>
+
+    <string name="settings_title_open_cores_selection">调整固件</string>
+    <string name="settings_description_open_cores_selection">选择关联系统的固件</string>
+
+    <string name="settings_title_display_bios_info">固件</string>
+    <string name="settings_description_display_bios_info">系统固件</string>
+    <string name="settings_bios_category_detected">检测</string>
+    <string name="settings_bios_category_not_detected">支持</string>
+
+    <string name="settings_title_reset_settings">恢复出厂设置</string>
+    <string name="settings_description_reset_settings">恢复任掌机到初始化的状态</string>
+
+    <string name="settings_title_advanced_settings">高级设置</string>
+    <string name="settings_description_advanced_settings">显示高级设置</string>
+    <string name="settings_title_low_latency_audio">开启音频低延迟效果</string>
+    <string name="settings_description_low_latency_audio">减少受支持设备上的音频延迟, 但可能会增加音效故障的几率</string>
+
+    <string name="settings_title_enable_rumble">震动</string>
+    <string name="settings_description_enable_rumble">在支持的游戏和控制器中启用振动</string>
+
+    <string name="settings_title_enable_device_rumble">设备震动</string>
+    <string name="settings_description_enable_device_rumble">当没有控制器连接时启用设备振动</string>
+
+    <string name="reset_settings_warning_message_title">确定要这么做吗?</string>
+    <string name="reset_settings_warning_message_description">这个操作将会重置任掌机的状态，但存档和游戏的状态会保留下来</string>
+
+    <string name="settings_title_save_sync">Cloud saves</string>
+    <string name="settings_description_save_sync">Back up and Sync your saves on the cloud</string>
+    <string name="settings_save_sync_refresh">Manual Sync</string>
+    <string name="settings_save_sync_refresh_description">Perform a manual Sync now.\n%1$s</string>
+    <string name="settings_save_sync_enable_auto">Auto-Sync</string>
+    <string name="settings_save_sync_enable_auto_description">Automatically perform a Sync before and after a game session when connected to Wifi</string>
+    <string name="settings_save_sync_configure">Configure %1$s</string>
+    <string name="settings_save_sync_include_saves">Sync in-game saves</string>
+    <string name="settings_save_sync_include_saves_description">%1$s on device</string>
+    <string name="settings_save_sync_include_states">Sync states</string>
+    <string name="settings_save_sync_include_states_description">More convenient, but heavier and less reliable. Choose which cores/systems you want to sync</string>
+
+    <string name="game_context_menu_add_to_favorites">添加收藏</string>
+    <string name="game_context_menu_remove_from_favorites">移出收藏</string>
+    <string name="game_context_menu_resume">继续游戏</string>
+    <string name="game_context_menu_restart">重新开始</string>
+    <string name="game_context_menu_create_shortcut">添加桌面</string>
+
+    <string name="home_empty_title">导入游戏</string>
+    <string name="home_empty_message">扫描手机上的游戏文件目录并导入游戏</string>
+    <string name="home_empty_action">选择目录</string>
+
+    <string name="game_menu_save">存档</string>
+    <string name="game_menu_load">读档</string>
+    <string name="game_menu_restart">重置游戏进度</string>
+    <string name="game_menu_quit">退出</string>
+    <string name="game_menu_settings">设置</string>
+    <string name="game_menu_share">分享</string>
+    <string name="game_menu_state">存档 %1$s</string>
+    <string name="game_menu_change_disk_button">调整容量</string>
+    <string name="game_menu_edit_touch_controls">自定义游戏按键</string>
+    <string name="game_menu_mute_audio">静音</string>
+    <string name="game_menu_fast_forward">变速</string>
+    <string name="game_menu_change_disk_disk">磁盘容量 %1$s</string>
+
+    <string name="game_loading_preparing_game">加载中...</string>
+
+    <string name="game_toast_settings_button_using_gamepad">检测到游戏控制器，设置菜单 %1$s.</string>
+    <string name="game_toast_load_state_failed">无法加载这个状态</string>
+
+    <string name="empty_view_default">赶快来添加喜欢的游戏吧~</string>
+
+    <string name="core_settings_title">固件设置</string>
+    <string name="core_settings_category_preferences">选项</string>
+    <string name="core_settings_category_controllers">控制器</string>
+    <string name="core_settings_controller">控制 %1$s</string>
+
+    <string name="game_menu_long_press">长按</string>
+
+    <string name="game_menu_title">游戏菜单</string>
+
+    <string name="notification_channel_name">所有通知</string>
+    <string name="library_index_notification_title">任掌机正在搜索游戏文件</string>
+    <string name="library_index_notification_message">这可能会需要数几分钟</string>
+
+    <string name="save_sync_notification_title">Cloud save Sync in progress</string>
+    <string name="save_sync_notification_message">This can take up to a few minutes</string>
+
+    <string name="game_running_notification_title">%1$s 正在运行</string>
+    <string name="game_running_notification_title_alternative">游戏正在运行</string>
+    <string name="game_running_notification_message">正在保存游戏状态</string>
+
+    <string name="installing_core_notification_title">升级内核</string>
+    <string name="installing_core_notification_message">这个过程会花费几分钟哦~</string>
+
+    <string name="game_loader_error_gl_incompatible">This Core requires an OpenGL ES version which is not supported by your device.</string>
+    <string name="game_loader_error_load_core">It looks like the Libretro core was not loaded. Make sure your device is connected to internet and try to rescan your library. If the issue persist this core might not be supported on your device.</string>
+    <string name="game_loader_error_load_game">Something bad happened while loading your game. Make sure the ROM is supported by Lemuroid and rescan your games.</string>
+    <string name="game_loader_error_save">Something bad happened with your save file. If the issue persists, try disabling auto-save.</string>
+
+    <string name="game_loader_error_generic">Something bad happened. Try the following:\n
+        \n\u2022 Disable auto-save and re-run the game
+        \n\u2022 Go into Android settings and clear the app cache
+        \n\u2022 Go into Lemuroid settings and perform a Factory Reset
+        \n\nIf none of the above works, it might be possible that this Game/Core is not supported by this device.
+    </string>
+
+    <string name="game_loader_error_missing_bios">It looks like you\'re missing the required BIOS, put them in your ROMs directory and rescan. Required files: %1$s</string>
+
+    <string name="game_shortcut_error">Something bad happened while loading your game. Please make sure this game still exists in your library.</string>
+
+    <string name="dialog_saf_not_found">系统目录开小差啦~ 请手动把游戏包复制到%1$s后重新扫描该目录 </string>
+
+    <string name="system_grid_details">%1$s games</string>
+
+    <string name="game_edit_touch_controls_error_not_visible">Disconnect your pad to edit your touch controls</string>
+
+    <string name="game_interactory_busy">待处理操作完成</string>
+
+    <string name="mobile_settings_about">关于</string>
+    <string name="mobile_settings_support">Support</string>
+    <string name="lemuroid_help_content"><![CDATA[
+帮助文档<br />
+选择游戏包所在的目录，点击 [设置] -> [扫描]，然后你就可以看到游戏显示在你的游戏界面啦~<br /><br />
+支持类型<br />
+目前支持的游戏类型格式:
+$SYSTEMS.<br /><br />
+浏览器引擎搜索上面支持的游戏类型格式，如 \"nes游戏下载\"，更多好玩的游戏等着你去发现，马上去试一试吧~<br />
+    ]]></string>
+
+    <string name="lemuroid_crash_disclamer">It looks like the Libretro core has experienced an unexpected issue. If it\'s persistent please try the following:\n
+        \n\u2022 Disable auto-save and re-run the game
+        \n\u2022 Go into Android settings and clear the app cache
+        \n\u2022 Go into Lemuroid settings and perform a Factory Reset
+        \n\n If none of the above works, it might be possible that this Game/Core is not supported by this device.
+    </string>
+
+    <string name="lemuroid_crash_message">错误提示: %1$s</string>
+
+    <string name="error_message_incompatible_state">此保存状态与当前内核版本不兼容。请加载游戏内最新的保存状态或使用以前的游戏版本。</string>
+    <string name="title_collection">收藏</string>
+
+    <string-array name="pref_key_shader_filter_names">
+        <item>自动</item>
+        <item>锐化</item>
+        <item>光滑</item>
+        <item>复古</item>
+        <item>LCD</item>
+    </string-array>
+
+    <string-array name="pref_key_haptic_feedback_mode_names">
+        <item>无</item>
+        <item>按下时震动</item>
+        <item>按下与释放时震动</item>
+    </string-array>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">发现新大陆</string>
+    <string name="update_content">更新内容</string>
+    <string name="update_no">下次再说</string>
+    <string name="update_yes">立即更新</string>
+    <string name="update_permission_hint">必须先要授予权限才能正常下载更新哦</string>
+    <string name="update_status_start">正在下载</string>
+    <string name="update_status_running">下载中 %d%%</string>
+    <string name="update_status_successful">下载完成，点击安装</string>
+    <string name="update_status_failed">下载失败，点击重试</string>
+    <string name="update_no_update">当前已是最新版本</string>
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">升级通知</string>
+    <string name="common_network_hint">当前没有网络连接，请检查网络设置</string>
+
+    <string name="common_permission_alert">授权提醒</string>
+    <string name="common_permission_fail_1">授权失败，请正确授予权限</string>
+    <string name="common_permission_fail_2">获取权限失败，请手动授予权限</string>
+    <string name="common_permission_fail_3">获取权限失败，请手动授予%s</string>
+    <string name="common_permission_fail_4">没有授予后台定位权限，请您选择"始终允许"</string>
+    <string name="common_permission_goto">前往授权</string>
+
+    <string name="common_permission_calendar">日历权限</string>
+    <string name="common_permission_camera">相机权限</string>
+    <string name="common_permission_contacts">通讯录权限</string>
+    <string name="common_permission_location">定位权限</string>
+    <string name="common_permission_location_background">后台定位权限</string>
+    <string name="common_permission_microphone">麦克风权限</string>
+    <string name="common_permission_phone">电话权限</string>
+    <string name="common_permission_call_log">通话记录权限</string>
+    <string name="common_permission_sensors">身体传感器权限</string>
+    <string name="common_permission_activity_recognition">健身运动权限</string>
+    <string name="common_permission_sms">短信权限</string>
+    <string name="common_permission_storage">存储权限</string>
+
+    <string name="common_permission_install">安装应用权限</string>
+    <string name="common_permission_notification">通知栏权限</string>
+    <string name="common_permission_window">悬浮窗权限</string>
+    <string name="common_permission_setting">系统设置权限</string>
+
+    <string name="common_no_more_data">没有更多数据了</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_confirm">确定</string>
+    <string name="openBrowser">浏览器搜索</string>
+    <string name="copyrightInfo">版权信息</string>
+    <string name="activity_game_share">分享</string>
+    <string name="happ_game">任掌机，致敬童年时光</string>
+    <string name="paly_togeter">微信扫一扫, 来任掌机重拾我们的青春吧~</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">分享</string>
+    <string name="share_platform_wechat">微信</string>
+    <string name="share_platform_moment">朋友圈</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ空间</string>
+    <string name="share_platform_link">复制链接</string>
+    <string name="share_save_pic">保存图片</string>
+    <string name="privacy_policy_info">用户服务协议和隐私政策</string>
+    <string name="agree_and_continue">同意并继续</string>
+    <string name="exist_app">退出应用</string>
+    <string name="update_protocol_text">感谢您使用口袋掌机，口袋掌机是一款开源软件。为保护您的个人信息安全，我们将依据口袋掌机的《用户服务协议》《隐私政策》《免责申明》来帮助您了解：我们如何收集个人信息、如何使用和存储个人信息，以及您享有的相关权利。\n\n在您使用口袋掌机的服务前，请务必仔细阅读并了解详细内容。如您同意，请点击同意并继续并开始使用我们的服务。 </string>
+
+    <string name="http_unknown_error">请求出错，未知错误</string>
+    <string name="http_token_error">登录失效，请重新登录</string>
+    <string name="http_data_explain_error">数据解析异常，请稍后</string>
+    <string name="http_server_out_time">服务器请求超时，请稍后再试</string>
+    <string name="http_network_error">请求失败，请检查网络设置</string>
+    <string name="http_response_error">服务器响应异常，请稍后再试，响应码：%d，响应信息：%s</string>
+    <string name="http_server_error">服务器连接异常，请稍后再试</string>
+    <string name="http_request_cancel">请求被中断，请重试</string>
+    <string name="http_response_null_body">服务器数据返回异常，请稍后再试</string>
+    <string name="http_response_md5_error">下载失败，文件 md5 校验失败</string>
+
+
+    <!-- 时间和日期 -->
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="days_ago">天前</string>
+    <string name="weeks_ago">周前</string>
+    <string name="year">年</string>
+    <string name="month">个月</string>
+    <string name="day">天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+
+
+</resources>

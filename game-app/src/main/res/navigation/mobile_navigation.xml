@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.happiest.game.app.mobile.feature.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.happiest.game.app.mobile.feature.favorites.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/layout_game_grid"/>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.happiest.game.app.mobile.feature.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings"/>
+
+    <fragment
+        android:id="@+id/navigation_settings_gamepad"
+        android:name="com.happiest.game.app.mobile.feature.settings.GamepadSettingsFragment"
+        android:label="@string/settings_title_gamepad_settings" />
+
+    <fragment
+        android:id="@+id/navigation_settings_bios_info"
+        android:name="com.happiest.game.app.mobile.feature.settings.BiosSettingsFragment"
+        android:label="@string/settings_title_display_bios_info" />
+
+    <fragment
+        android:id="@+id/navigation_settings_advanced"
+        android:name="com.happiest.game.app.mobile.feature.settings.AdvancedSettingsFragment"
+        android:label="@string/settings_title_advanced_settings" />
+
+    <fragment
+        android:id="@+id/navigation_settings_save_sync"
+        android:name="com.happiest.game.app.mobile.feature.settings.SaveSyncFragment"
+        android:label="@string/settings_title_save_sync" />
+
+    <fragment
+        android:id="@+id/navigation_settings_cores_selection"
+        android:name="com.happiest.game.app.mobile.feature.settings.CoresSelectionFragment"
+        android:label="@string/settings_title_open_cores_selection" />
+
+</navigation>
